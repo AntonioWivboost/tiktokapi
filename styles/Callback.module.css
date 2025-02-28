@@ -1,0 +1,67 @@
+/* styles/Callback.module.css */
+.callbackContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    text-align: center;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .loadingSpinner {
+    width: 60px;
+    height: 60px;
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #ff0050;
+    border-radius: 50%;
+    animation: spin 1.2s linear infinite;
+    margin-bottom: 2rem;
+  }
+  
+  .callbackContainer h1 {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .callbackContainer p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .callbackContainer h1 {
+      font-size: 1.75rem;
+    }
+    
+    .loadingSpinner {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .callbackContainer {
+      padding: 1.5rem;
+    }
+    
+    .callbackContainer h1 {
+      font-size: 1.5rem;
+    }
+    
+    .callbackContainer p {
+      font-size: 1rem;
+    }
+  }

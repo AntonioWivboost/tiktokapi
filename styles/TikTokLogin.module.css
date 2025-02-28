@@ -1,0 +1,66 @@
+/* styles/TikTokLogin.module.css */
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    min-height: 50px;
+  }
+  
+  .tiktokLoginButton {
+    margin: 0.5rem 0;
+    min-height: 44px;
+    min-width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .loadingMessage {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+  }
+  
+  .errorContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+  
+  .errorMessage {
+    color: #e53e3e;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .customButton {
+    background-color: #ff0050;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 16px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .customButton:hover {
+    background-color: #e00046;
+  }
+  
+  .customButton::before {
+    content: "";
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="white"><path d="M19.321 5.562a5.124 5.124 0 01-1.388-2.65h.007V2h-3.768v13.737c0 1.373-1.121 2.488-2.499 2.488a2.494 2.494 0 01-2.499-2.488c0-1.374 1.12-2.489 2.499-2.489.284 0 .56.047.82.134v-3.96a6.93 6.93 0 00-2.953.862 6.409 6.409 0 00-2.821 3.339 6.319 6.319 0 00-.284 3.32 6.363 6.363 0 001.639 3.013 6.469 6.469 0 002.99 1.712 6.54 6.54 0 003.354-.125 6.453 6.453 0 002.911-1.956 6.32 6.32 0 001.386-3.138c.089-.513.147-1.03.146-1.55V8.079a8.528 8.528 0 003.36 1.03V5.678a5.171 5.171 0 01-2.9-.116z"/></svg>');
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    display: inline-block;
+    background-repeat: no-repeat;
+  }
